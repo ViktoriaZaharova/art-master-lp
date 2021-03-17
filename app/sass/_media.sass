@@ -1,0 +1,359 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  .calculate-img
+    min-width: 500px
+
+  .calculate-content
+    padding: 30px 20px 30px 0
+
+  .stages-work-box
+    padding: 0 100px 0 0
+
+  .stages-work-wrapper:before
+    width: 820px
+    left: 78px
+
+  .reviews-box
+    padding: 40px
+
+  .calculate-content
+    &:before
+      height: 100%
+
+  .measurer .calculate-content:before
+    height: 100%
+
+  h1
+    font-size: 30px
+
+  .main-content .box-text
+    font-size: 20px
+
+  .menu
+    font-size: 15px
+
+  .menu-item:after
+    margin: 0 10px
+
+  .main-slider
+    min-width: 700px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .phone
+    font-size: 18px
+
+  .footer-top
+    padding: 50px 0 30px
+
+  h2
+    margin: 0 0 30px
+
+  .btn, footer
+    font-size: 14px
+
+  .contacts-box
+    margin: 0 0 20px
+
+  .stages-work-box
+    padding: 0
+    font-size: 16px
+    margin: 0 0 30px
+    width: 33.3%
+
+    &:before, &:after
+      display: none
+    &:nth-child(-n+3)
+      padding: 0
+
+  .stages-work, .production, .reviews
+    h2
+      margin: 0 0 30px
+
+  .stages-work-wrapper
+    max-width: none
+    justify-content: space-around
+    &:before
+      display: none
+
+  .reviews-box__content
+    width: 100%
+    padding: 0
+    margin: 0 0 30px
+
+  .reviews-box__img
+    width: 100%
+    height: auto
+
+  .reviews
+    padding: 30px 0
+
+  label
+    margin: 0 0 28px
+    max-width: none
+    
+  .form-footer
+    justify-content: flex-start
+    .phone
+      text-align: left
+
+  .whatsapp
+    margin: 0
+
+  .counter-slide
+    margin: 30px 0
+    font-size: 20px
+
+  .variable-content
+    font-size: 18px
+    max-width: none
+    margin: 0 0 30px
+    h2
+      br
+        display: none
+
+
+  .main-slider
+    margin: 0
+    min-width: auto
+
+  main
+    background: url("../img/bg1.jpg") no-repeat center
+      size: cover
+    &:before
+      display: none
+
+  .main-content
+    padding: 30px 0
+    .box-text
+      padding: 0 0 20px
+      font-size: 16px
+    ul
+      margin: 20px 0
+
+  .main-slider__img
+    height: auto
+
+  .menu
+    font-size: 12px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  .footer-box
+    margin: 0 0 30px
+
+  footer
+    .phone
+      text-align: left
+    .list-social
+      justify-content: flex-start
+
+  h2
+    font-size: 30px
+
+  .footer-bottom
+    padding: 10px 0
+
+  .calculate-img
+    min-width: auto
+    margin: 0
+
+  .callback
+    .calculate-content
+      padding: 40px 0
+      margin: 0 0 30px
+
+  .certificate, .project, .complex, .variable, .why
+    padding: 30px 0
+
+  .whatsapp
+    font-size: 15px
+
+  .single-block__box:before
+    right: -23%
+
+  .single-block__box-left
+    padding: 15px
+    p
+      margin: 0
+      max-width: none
+
+  .single-block__box-left:after, .single-block__box-right:after
+    display: none
+
+  .single-block__box-right p
+    max-width: none
+    text-align: left
+
+  .single-block__box-right
+    padding: 15px
+
+  .single-block__box-right:before
+    right: auto
+    left: -23%
+
+  .complex-wrapper
+    max-width: none
+    width: 100%
+    &:before, &:after
+      display: none
+
+  .complex-box
+    max-width: none
+    width: 100%
+    margin: 0 0 30px
+    padding: 0 0 0 70px
+    .complex-box__icon
+      left: 0
+      top: 0
+    &__title
+      position: initial
+      &:before, &:after
+        display: none
+    &:nth-child(even)
+      margin: 0 0 30px
+      padding: 0 0 0 70px
+      .complex-box__icon
+        left: 0
+        right: auto
+
+  .complex, .why
+    h2
+      margin: 0 0 30px
+
+  .variable-box
+    margin: 0 0 30px
+    height: auto
+    &:last-child
+      margin: 0 0 30px
+
+  .why-blockquote
+    font-size: 16px
+
+
+  .why-content
+    h3
+      font-size: 22px
+
+  .why-box
+    font-size: 16px
+    h4
+      font-size: 20px
+      margin: 0 0 15px
+      max-width: none
+
+  .technology-title
+    margin: 0 0 10px
+    h3
+      font-size: 26px
+    &:before
+      right: -23%
+
+  .technology-title-right
+    text-align: left
+    &:before
+      left: -23%
+      right: auto
+
+  .technology-img
+    margin: 20px auto 0
+
+  .technology, .advantages, .video
+    padding: 30px 0
+    h2
+      margin: 0 0 30px
+
+  h1
+    font-size: 26px
+
+  header .phone
+    font-size: 15px
+
+  .menu
+    font-size: 12px
+    justify-content: center
+    margin: 10px 0
+    height: auto
+
+  .header-top
+    .header-box
+      justify-content: center
+
+  .menu-item:after
+    margin: 0 5px
+    width: 1px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 630px)
+  .reviews-slider
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
+
+  .project-slider
+    padding: 0 30px
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
+
+@media only screen and (max-width: 480px)
+  label
+    max-width: none
+    width: 100%
+    margin: 0 0 28px
+
+  .label-message
+    max-width: none
+
+  .form-footer .phone
+    font-size: 15px
+
+  .calculate-content p
+    font-size: 14px
+
+  .stages-work-box
+    width: 50%
+
+  .reviews-box
+    width: calc(100% - 30px)
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 420px)
+  .form button
+    padding: 6px 10px
+
+  .reviews-box
+    width: calc(100% - 30px)
+
+  .reviews-slider
+    padding: 0
+    &:before
+      display: none
+
+  .slick-arrow
+    width: 18px
+    height: 30px
+
+  .video-box-item
+    padding: 10px
+
+  .btn-video
+    width: 80px
+    height: 80px
+    &:before
+      width: 60px
+      height: 60px
+
+  .video-box
+    height: 350px
+
+
