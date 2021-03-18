@@ -65,11 +65,19 @@
     font-size: 16px
     margin: 0 0 30px
     width: 33.3%
-
-    &:before, &:after
+    &:before
+      height: 2px
+      width: 70px
+      right: -40px
+    &:after
       display: none
     &:nth-child(-n+3)
       padding: 0
+      &:before
+        width: 70px
+    &:nth-child(3), &:nth-child(6)
+      &:before
+        display: none
 
   .stages-work, .production, .reviews
     h2
@@ -129,7 +137,7 @@
       display: none
 
   .main-content
-    padding: 30px 0
+    padding: 60px 0 30px
     .box-text
       padding: 0 0 20px
       font-size: 16px
@@ -222,6 +230,8 @@
       .complex-box__icon
         left: 0
         right: auto
+        bottom: auto
+        top: 0
 
   .complex, .why
     h2
@@ -251,15 +261,8 @@
   .technology-title
     margin: 0 0 10px
     h3
-      font-size: 26px
-    &:before
-      right: -23%
+      font-size: 22px
 
-  .technology-title-right
-    text-align: left
-    &:before
-      left: -23%
-      right: auto
 
   .technology-img
     margin: 20px auto 0
@@ -275,19 +278,34 @@
   header .phone
     font-size: 15px
 
-  .menu
-    font-size: 12px
-    justify-content: center
-    margin: 10px 0
-    height: auto
-
-  .header-top
-    .header-box
-      justify-content: center
 
   .menu-item:after
     margin: 0 5px
     width: 1px
+
+  .header-top
+    display: none
+
+  .btn-burger
+    display: flex
+
+  .header-box
+    padding: 0 30px 0 0
+    position: relative
+
+  .menu
+    font-size: 16px
+
+  .calculate-content
+    padding: 30px 0
+
+  .stages-work-box
+    &:before
+      width: 50px
+      right: -25px
+    &:nth-child(-n+3)
+      &:before
+        width: 50px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 630px)
@@ -303,6 +321,13 @@
       left: 0
     .slick-next
       right: 0
+
+@media only screen and (max-width: 576px)
+  .why-slider
+    width: 100%
+    margin: 0
+    padding: 0 30px
+
 
 @media only screen and (max-width: 480px)
   label
@@ -324,6 +349,15 @@
 
   .reviews-box
     width: calc(100% - 30px)
+
+  .stages-work-box
+    &:nth-child(3)
+      &:before
+        display: inline-block
+    &:nth-child(2), &:nth-child(4)
+      &:before
+        display: none
+
 
 
 /* Custom, iPhone Retina */
@@ -356,4 +390,17 @@
   .video-box
     height: 350px
 
+  header .phone
+    font-size: 12px
+
+  .stages-work-icon
+    max-width: 70px
+
+  .stages-work-box:before
+    top: 35px
+
+  .technology-title
+    padding: 10px 0
+    h3
+      font-size: 16px
 

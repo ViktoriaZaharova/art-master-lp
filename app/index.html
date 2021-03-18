@@ -30,6 +30,28 @@
 
 <body>
 
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+
+  <ul class="menu">
+    <li class="menu-item"><a href="index.html" class="menu-links">главная</a></li>
+    <li class="menu-item"><a href="#portfolio" class="menu-links go_to">портфолио</a></li>
+    <li class="menu-item"><a href="#reviews" class="menu-links go_to">отзывы</a></li>
+    <li class="menu-item"><a href="#footer" class="menu-links go_to">контакты</a></li>
+  </ul>
+
+  <ul class="list-social">
+    <li>
+      <a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#instagram"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+  <a href="#order-sin" class="btn btn-accent go_to">Заказать вывеску</a>
+</div>
+
 <header>
   <div class="header-top">
     <div class="container">
@@ -54,7 +76,7 @@
                 </a>
               </li>
             </ul>
-            <a href="#order-sing" class="btn btn-accent go_to">Заказать вывеску</a>
+            <a href="#order-sin" class="btn btn-accent go_to">Заказать вывеску</a>
           </div>
         </div>
       </div>
@@ -70,6 +92,12 @@
           <div class="header-box">
             <a href="tel:+78412292659" class="phone">8 (8412) 29-26-59</a>
             <a href="mailto:292059@mail.ru" class="phone mail">292059@mail.ru</a>
+
+            <div class="btn-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </div>
@@ -80,6 +108,21 @@
 <main>
   <div class="container">
     <div class="row">
+
+      <div class="col-12 col-lg-6 order-lg-1">
+        <div class="main-slider">
+          <div class="slide">
+            <div class="main-slider__img"><img src="img/slide1.jpg" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="main-slider__img"><img src="img/slide1.jpg" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="main-slider__img"><img src="img/slide1.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+
       <div class="col-12 col-lg-6">
         <div class="main-content">
           <h1>вывески с объемными
@@ -96,19 +139,6 @@
         </div>
       </div>
 
-      <div class="col-12 col-lg-6">
-        <div class="main-slider">
-          <div class="slide">
-            <div class="main-slider__img"><img src="img/slide1.jpg" alt=""></div>
-          </div>
-          <div class="slide">
-            <div class="main-slider__img"><img src="img/slide1.jpg" alt=""></div>
-          </div>
-          <div class="slide">
-            <div class="main-slider__img"><img src="img/slide1.jpg" alt=""></div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </main>
@@ -128,7 +158,7 @@
                 видео</p>
               <span>0:35</span>
             </div>
-            <a class="btn-video" data-fancybox="video" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"></a>
+            <a class="btn-video" data-fancybox="video" href="https://www.youtube.com/watch?v=c_bmdCz3q3g"></a>
           </div>
         </div>
       </div>
@@ -235,8 +265,8 @@
             </label>
             <button type="submit" class="btn btn-white">заказать расчет</button>
             <div class="form-footer">
-              <a href="tel:+79876549221" class="phone">+7 (987) 654-92-21</a>
-              <a href="whatsapp://send?phone=+79876549221" class="whatsapp">
+              <a href="tel:+79631094192" class="phone">+7 (963) 109-41-92</a>
+              <a href="whatsapp://send?phone=+79631094192" class="whatsapp">
                 <span class="whatsapp-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#whatsapp"></use></svg></span>
                 <span class="whatsapp-text">WhatsApp</span>
               </a>
@@ -246,7 +276,7 @@
 
         </div>
       </div>
-      <div class="col-12 col-md-5 col-lg-4">
+      <div class="col-12 col-md-5 col-lg-4 d-none d-md-block">
         <div class="calculate-img"><img src="img/img1.jpg" alt=""></div>
       </div>
     </div>
@@ -260,13 +290,13 @@
         <h2>Производим буквы по технологии <span class="color-accent text-uppercase">«жидкий акрил»</span></h2>
       </div>
 
-      <div class="col-12 col-md-5 col-lg-4">
+      <div class="col-6 col-md-5 col-lg-4">
         <div class="technology-title technology-title-left">
           <h3>Обычная буква</h3>
         </div>
       </div>
 
-      <div class="col-12 col-md-5 col-lg-4 offset-lg-4 offset-md-2">
+      <div class="col-6 col-md-5 col-lg-4 offset-lg-4 offset-md-2">
         <div class="technology-title technology-title-right">
           <h3>Жидкий акрил</h3>
         </div>
@@ -308,7 +338,7 @@
       </div>
 
       <div class="col-12 col-lg-7">
-        <div class="row">
+        <div class="row why-slider">
           <div class="col-6">
             <div class="why-box">
               <h4>на <span class="color-accent">35%</span>
@@ -484,8 +514,8 @@
             </label>
             <button type="submit" class="btn btn-white">сделать заказ</button>
             <div class="form-footer">
-              <a href="tel:+79876549221" class="phone">+7 (987) 654-92-21</a>
-              <a href="whatsapp://send?phone=+79876549221" class="whatsapp">
+              <a href="tel:+79631094192" class="phone">+7 (963) 109-41-92</a>
+              <a href="whatsapp://send?phone=+79631094192" class="whatsapp">
                 <span class="whatsapp-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#whatsapp"></use></svg></span>
                 <span class="whatsapp-text">WhatsApp</span>
               </a>
@@ -493,7 +523,7 @@
           </form>
         </div>
       </div>
-      <div class="col-12 col-md-5 col-lg-4">
+      <div class="col-12 col-md-5 col-lg-4 d-none d-md-block">
         <div class="calculate-img"><img src="img/img6.jpg" alt=""></div>
       </div>
     </div>
@@ -592,7 +622,7 @@
   </div>
 </div>
 
-<section class="variable project-category project">
+<section class="variable project-category project" id="portfolio">
   <div class="container">
     <div class="row">
 
@@ -761,10 +791,10 @@
               <span class="input-title">Телефон</span>
               <input type="text" name="phone">
             </label>
-            <button type="submit" class="btn btn-white">заказать выед</button>
+            <button type="submit" class="btn btn-white">заказать выезд</button>
             <div class="form-footer">
-              <a href="tel:+79876549221" class="phone">+7 (987) 654-92-21</a>
-              <a href="whatsapp://send?phone=+79876549221" class="whatsapp">
+              <a href="tel:+79631094192" class="phone">+7 (963) 109-41-92</a>
+              <a href="whatsapp://send?phone=+79631094192" class="whatsapp">
                 <span class="whatsapp-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#whatsapp"></use></svg></span>
                 <span class="whatsapp-text">WhatsApp</span>
               </a>
@@ -772,7 +802,7 @@
           </form>
         </div>
       </div>
-      <div class="col-12 col-md-5 col-lg-4">
+      <div class="col-12 col-md-5 col-lg-4 d-none d-md-block">
         <div class="calculate-img"><img src="img/img8.jpg" alt=""></div>
       </div>
     </div>
@@ -780,7 +810,7 @@
 </section>
 
 
-<section class="reviews">
+<section class="reviews" id="reviews">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -955,8 +985,7 @@
           </div>
           <div class="stages-work-box">
             <div class="stages-work-icon"><img src="img/stage-work7.png" alt=""></div>
-            <p>Согласование
-              с заказчиком</p>
+            <p>Завершение сделки</p>
           </div>
         </div>
       </div>
@@ -1016,18 +1045,22 @@
 
             <div class="form-footer">
               <button type="submit" class="btn btn-white">задать вопрос</button>
-              <a href="tel:+79876549221" class="phone">+7 (987) 654-92-21</a>
+              <a href="tel:+79631094192" class="phone">+7 (963) 109-41-92</a>
             </div>
 
-            <label class="checkbox">
-              <input class="checkbox-inp" type="checkbox" name="checkbox">
-              <span class="checkbox-custom"></span>
-              <span class="label">Даю согласие на обработку персональных данных</span>
-            </label>
+            <a href="whatsapp://send?phone=+79631094192" class="whatsapp">
+              <span class="whatsapp-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#whatsapp"></use></svg></span>
+              <span class="whatsapp-text">WhatsApp</span>
+            </a>
+<!--            <label class="checkbox">-->
+<!--              <input class="checkbox-inp" type="checkbox" name="checkbox">-->
+<!--              <span class="checkbox-custom"></span>-->
+<!--              <span class="label">Даю согласие на обработку персональных данных</span>-->
+<!--            </label>-->
           </form>
         </div>
       </div>
-      <div class="col-12 col-md-5 col-lg-4">
+      <div class="col-12 col-md-5 col-lg-4 d-none d-md-block">
         <div class="calculate-img">
           <img src="img/img7.jpg" alt="">
           <img src="img/A4.png" alt="" class="img-photo">
@@ -1056,7 +1089,7 @@
           <div class="footer-box">
             <div class="contacts-box">
               <h3>Адрес</h3>
-              <p>г. Пенза, ул. Терновского 220, к. 4</p>
+              <p>г. Реутов, ул. Железнодорожная, 2а</p>
             </div>
             <div class="contacts-box">
               <h3>Время работы</h3>
@@ -1068,7 +1101,7 @@
 
         <div class="col-12 col-sm-6 col-md-4">
           <div class="footer-box">
-            <a href="tel:+79876543221" class="phone">+7 (987) 654-32-21</a>
+            <a href="tel:+79631094192" class="phone">+7 (963) 109-41-92</a>
             <a href="mailto:292059@mail.ru" class="phone mail">292059@mail.ru</a>
 
             <ul class="list-social">
