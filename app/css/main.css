@@ -1831,4 +1831,6 @@ footer {
   .technology-title {
     padding: 10px 0; }
     .technology-title h3 {
-      font-size: 16px; } }
+      font-size: 16px; }
+  .why-box {
+    max-width: none; } }

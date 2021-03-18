@@ -71,7 +71,17 @@ $(window).on('load resize', function() {
                 '</svg>\n</button>',
             nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="46" viewBox="0 0 21 46">\n' +
                 '  <path d="M1088.99,4840.99l11.37-22.99-11.37-23h9.65l11.37,23-11.37,22.99h-9.65Z" transform="translate(-1089 -4795)"/>\n' +
-                '</svg>\n</button>'
+                '</svg>\n</button>',
+            responsive: [
+
+                {
+                    breakpoint: 420,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
     } else {
         $(".why-slider.slick-initialized").slick("unslick");
